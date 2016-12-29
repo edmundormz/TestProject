@@ -8,10 +8,10 @@ namespace TestProject.Core.Interfaces
 {
     public interface IToy
     {
-        void Add(Toy t);
+        string Add(Toy t);
         void Edit(Toy t);
         void Remove(int Id);
-        IEnumerable<Toy> GetToys();
+        List<Toy> GetToys();
         Toy FindById(int Id);
     }
 }

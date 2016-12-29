@@ -1,0 +1,14 @@
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\TestProject.Infrastructure.dll.config
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\TestProject.Infrastructure.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\TestProject.Infrastructure.pdb
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\TestProject.Core.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\TestProject.Core.pdb
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\obj\Debug\TestProject.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\obj\Debug\TestProject.Infrastructure.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\obj\Debug\TestProject.Infrastructure.pdb
