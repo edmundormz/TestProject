@@ -8,7 +8,7 @@ namespace TestProject.Core.Interfaces
 {
     public interface IToy
     {
-        string Add(Toy t);
+        void Add(Toy t);
         void Edit(Toy t);
         void Remove(int Id);
         List<Toy> GetToys();

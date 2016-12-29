@@ -15,10 +15,14 @@ namespace TestProject.Infrastructure
     {
 
         //TODO Maybe change logic in methods for use with JSON
-        public string Add(Toy t)
+        public void Add(Toy t)
         {
-            string output = JsonConvert.SerializeObject(t);
-            return output;
+            JArray toysArrary = JArray.Parse(File.ReadAllText(@"C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\dataToys.json"));
+            List<Toy> toys = toysArrary.ToObject<List<Toy>>();
+            t.Id = toys.Count + 1;
+            toys.Add(t);
+            string result = JsonConvert.SerializeObject(toys, Formatting.Indented);
+            File.WriteAllText(@"C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Infrastructure\dataToys.json", result);
         }
 
         public void Edit(Toy t)

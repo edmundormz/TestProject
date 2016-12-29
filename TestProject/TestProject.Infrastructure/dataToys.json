@@ -1,18 +1,26 @@
-﻿[
-    {
-      "Id": 1,
-      "Name": "Iron Man",
-      "Description": "You know who it is",
-      "AgeRestriction": 0,
-      "Company": "Marvel",
-      "Price": 90
-    },
-    {
-      "Id": 2,
-      "Name": "Captain America",
-      "Description": "Cheaper than Iron Man",
-      "AgeRestriction": 0,
-      "Company": "Marvel",
-      "Price": 90
-    }
-  ]
+[
+  {
+    "Id": 1,
+    "Name": "Iron Man",
+    "Description": "You know who it is",
+    "AgeRestriction": 0,
+    "Company": "Marvel",
+    "Price": 90.0
+  },
+  {
+    "Id": 2,
+    "Name": "Captain America",
+    "Description": "Cheaper than Iron Man",
+    "AgeRestriction": 0,
+    "Company": "Marvel",
+    "Price": 90.0
+  },
+  {
+    "Id": 3,
+    "Name": "Hulk",
+    "Description": "You know",
+    "AgeRestriction": 0,
+    "Company": "Marvel",
+    "Price": 90.0
+  }
+]

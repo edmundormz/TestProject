@@ -15,22 +15,24 @@ namespace TestProject.Tests
         public void TestSetup()
         {
             repo = new ToyRepository();
+            var countId = repo.GetToys().Count;
         }
 
         [TestMethod]
-        public void SerializeObject()
+        public void AddingToys()
         {
             Toy t = new Toy
             {
-                Id = 1,
-                Name = "Iron Man",
+                Id = 3,
+                Name = "Hulk",
                 Price = 90,
                 AgeRestriction = 0,
                 Description = "You know",
                 Company = "Marvel"
             };
-            var result = repo.Add(t);
-            Assert.IsNotNull(result);
+            repo.Add(t);
+            var result = repo.GetToys().Count;
+            Assert.AreEqual(3,result);
             }
 
         [TestMethod]
@@ -40,6 +42,12 @@ namespace TestProject.Tests
             Assert.IsNotNull(result);
             var countToys = repo.GetToys().Count;
             Assert.AreEqual(2, countToys);
+        }
+
+        [TestMethod]
+        public void DontRepeatIds()
+        {
+
         }
     }
 }
