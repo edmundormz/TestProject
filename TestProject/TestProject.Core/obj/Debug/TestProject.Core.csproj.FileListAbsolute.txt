@@ -1,0 +1,5 @@
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Core\bin\Debug\TestProject.Core.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Core\bin\Debug\TestProject.Core.pdb
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Core\obj\Debug\TestProject.Core.csprojResolveAssemblyReference.cache
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Core\obj\Debug\TestProject.Core.dll
+C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Core\obj\Debug\TestProject.Core.pdb
