@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Unosquare.Tubular</name>
+    </assembly>
+    <members>
+        <member name="T:Unosquare.Tubular.ChartsExtension">
+            <summary>
+            Extension methods to create chart responses
+            </summary>
+        </member>
+        <member name="M:Unosquare.Tubular.ChartsExtension.ProvideSingleSerieChartResponse``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,Unosquare.Tubular.AggregationFunction)">
+            <summary>
+            Creates a single serie chart from a IQueryable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TR"></typeparam>
+            <param name="datasource"></param>
+            <param name="label"></param>
+            <param name="value"></param>
+            <param name="serieName"></param>
+            <param name="aggregation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Unosquare.Tubular.ChartsExtension.ProvideMultipleSerieChartResponse``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Unosquare.Tubular.AggregationFunction)">
+            <summary>
+            Creates a multiple series chart from a IQueryable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TR"></typeparam>
+            <param name="datasource"></param>
+            <param name="label"></param>
+            <param name="serie"></param>
+            <param name="value"></param>
+            <param name="aggregation"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Unosquare.Tubular.SortDirection">
+            <summary>
+            Enumeration Sort directions
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.SortDirection.None">
+            <summary>
+            Not sorting
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.SortDirection.Ascending">
+            <summary>
+            Ascending sorting
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.SortDirection.Descending">
+            <summary>
+            Descending sorting
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.CompareOperators">
+            <summary>
+            Enumeration filtering operators
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.None">
+            <summary>
+            None operator
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Auto">
+            <summary>
+            Auto-filtering
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Equals">
+            <summary>
+            Equals operator
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.NotEquals">
+            <summary>
+            Not Equals operator
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Contains">
+            <summary>
+            Contains filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.StartsWith">
+            <summary>
+            StartsWith filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.EndsWith">
+            <summary>
+            EndsWith filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Gte">
+            <summary>
+            Greater than or equal filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Gt">
+            <summary>
+            Greater than filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Lte">
+            <summary>
+            Less than or equal filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Lt">
+            <summary>
+            Less than filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Multiple">
+            <summary>
+            Multiple options filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.Between">
+            <summary>
+            Between values filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.NotContains">
+            <summary>
+            Not Contains filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.NotStartsWith">
+            <summary>
+            Not StartsWith filter
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.CompareOperators.NotEndsWith">
+            <summary>
+            Not EndsWith filter
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.DataType">
+            <summary>
+            Supported data types
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.String">
+            <summary>
+            String type
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.Numeric">
+            <summary>
+            Numeric type (int or float)
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.DateTime">
+            <summary>
+            DataTime type
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.Date">
+            <summary>
+            Only Date type
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.Boolean">
+            <summary>
+            Boolean type
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.DataType.DateTimeUtc">
+            <summary>
+            DataTime UTC type
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.AggregationFunction">
+            <summary>
+            Aggregation Functions
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.None">
+            <summary>
+            None function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.Sum">
+            <summary>
+            Sum function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.Average">
+            <summary>
+            Average function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.Count">
+            <summary>
+            Count function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.DistinctCount">
+            <summary>
+            Distinct Count function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.Max">
+            <summary>
+            Max function
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.AggregationFunction.Min">
+            <summary>
+            Min function
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.Common">
+            <summary>
+            Common properties
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.Common.PrimitiveTypes">
+            <summary>
+            Defines primitive types
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.Extensions">
+            <summary>
+            Extensions methods
+            </summary>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.AdjustTimeZone(System.Object,System.Int32)">
+            <summary>
+            Adjust a timezone data in a object
+            </summary>
+            <param name="data"></param>
+            <param name="timezoneOffset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.AdjustObjectTimeZone(System.Net.Http.HttpRequestMessage,System.Object,System.Boolean)">
+            <summary>
+            Checks the datetime properties in an object and adjust the timezone.
+            </summary>
+            <param name="request">The Http Request</param>
+            <param name="data">The output object</param>
+            <param name="fromLocal"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Unosquare.Tubular.Extensions.ProcessResponseSubset">
+            <summary>
+            Delegates a process to format a subset response
+            </summary>
+            <param name="dataSource">The datasource</param>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.CreateGridDataResponse(Unosquare.Tubular.ObjectModel.GridDataRequest,System.Linq.IQueryable)">
+            <summary>
+            Generates a GridDataReponse using the GridDataRequest and an IQueryable source,
+            like a DataSet in Entity Framework.
+            </summary>
+            <param name="request">The Tubular's grid request</param>
+            <param name="dataSource">The IQueryable source</param>
+            <returns></returns>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.CreateGridDataResponse(Unosquare.Tubular.ObjectModel.GridDataRequest,System.Linq.IQueryable,Unosquare.Tubular.Extensions.ProcessResponseSubset)">
+            <summary>
+            Generates a GridDataReponse using the GridDataRequest and an IQueryable source,
+            like a DataSet in Entity Framework.
+            </summary>
+            <param name="request">The Tubular's grid request</param>
+            <param name="dataSource">The IQueryable source</param>
+            <param name="preProcessSubset">The subset's process delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.CreateDynamicFilteredSet(System.Linq.IQueryable,System.String,System.String)">
+            <summary>
+            Creates a dynamic set filtered by a LINQ expression
+            </summary>
+            <param name="dataSource">The IQueryable source</param>
+            <param name="fieldName">The field to filter</param>
+            <param name="filter">The LINQ expression</param>
+            <returns>The filtered IQueryable</returns>
+        </member>
+        <member name="M:Unosquare.Tubular.Extensions.CreateTypeAheadList(System.Linq.IQueryable,System.String,System.String,System.Int32)">
+            <summary>
+            Generates a list with distinct values to use in TypeAhead UI control
+            </summary>
+            <param name="dataSource">The IQueryable source</param>
+            <param name="fieldName">The field to filter</param>
+            <param name="filter">The LINQ expression</param>
+            <param name="records">How many records to retrieve, default 8</param>
+            <returns>The filtered IQueryable</returns>
+        </member>
+        <member name="T:Unosquare.Tubular.TubularDefaultSettings">
+            <summary>
+            Tubular default settings
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.TubularDefaultSettings.AdjustTimezoneOffset">
+            <summary>
+            Defines if the timezone offset should used
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.Filter">
+            <summary>
+            Represents a Tubular's filter (by column).
+            
+            This object is only used to be serialized/deserialized between
+            the API and Tubular
+            </summary>
+        </member>
+        <member name="M:Unosquare.Tubular.ObjectModel.Filter.#ctor">
+            <summary>
+            Initialize a Filter with default params
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.Name">
+            <summary>
+            Filter name
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.Text">
+            <summary>
+            Filter search text
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.Argument">
+            <summary>
+            Filter search params
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.Operator">
+            <summary>
+            Filter's operator
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.OptionsUrl">
+            <summary>
+            Gets or sets the options URL.
+            The url returns a list of Filter objects
+            </summary>
+            <value>
+            The options URL.
+            </value>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.Filter.HasFilter">
+            <summary>
+            Flags if the Filter is applied.
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.GridColumn">
+            <summary>
+            Represents a Tubular's Grid column.
+            
+            This object is only used to be serialized/deserialized between
+            the API and Tubular
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Name">
+            <summary>
+            Column Name
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Label">
+            <summary>
+            Column Label
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Sortable">
+            <summary>
+            Set if column is sortable
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.SortOrder">
+            <summary>
+            Set the sort order, zero or less are ignored
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.SortDirection">
+            <summary>
+            Set the sort direction
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Filter">
+            <summary>
+            Represents the Columns filter
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Searchable">
+            <summary>
+            Set if the column is searchable in free-text search
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.DataType">
+            <summary>
+            Column data type
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.Aggregate">
+            <summary>
+            The Aggregation Function
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridColumn.MetaAggregate">
+            <summary>
+            The Agregation Function to perform in the column
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.GridDataRequest">
+            <summary>
+            Represents a Data Request from a Tubular's Grid.
+            
+            This model is how Tubular Grid sends data to any server.
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.Counter">
+            <summary>
+            Request's counter
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.Search">
+            <summary>
+            The free-text search
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.Skip">
+            <summary>
+            Set how many records skip, for pagination
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.Take">
+            <summary>
+            Set how many records take, for pagination
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.Columns">
+            <summary>
+            Defines the columns
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataRequest.TimezoneOffset">
+            <summary>
+            Sent the minutes difference between UTC and local time
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.GridDataResponse">
+            <summary>
+            Represents a Data Response to a Tubular's Grid.
+            
+            This model is how Tubular Grid expects data to any server.
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.Counter">
+            <summary>
+            Response's counter
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.Payload">
+            <summary>
+            A list of object's list with all the rows
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.TotalRecordCount">
+            <summary>
+            Set how many records are in the entire set
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.FilteredRecordCount">
+            <summary>
+            Set how many records are in the filtered set
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.TotalPages">
+            <summary>
+            Set how many pages are available
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.CurrentPage">
+            <summary>
+            Set which page is sent
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataResponse.AggregationPayload">
+            <summary>
+            A dictionary with the aggregation functions
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.GridDataUpdateRow`1">
+            <summary>
+            Represents an non-optimistic row.
+            
+            The Old property contains the original model and the New property
+            the changes to commit.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataUpdateRow`1.Old">
+            <summary>
+            Original model
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataUpdateRow`1.New">
+            <summary>
+            Changed model
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.GridDataUpdateRow`1.TimezoneOffset">
+            <summary>
+            The timezone offset
+            </summary>
+        </member>
+        <member name="M:Unosquare.Tubular.ObjectModel.GridDataUpdateRow`1.AdjustTimezoneOffset">
+            <summary>
+            Adjust the timezone to UTC
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.ModelColumn">
+            <summary>
+            Represents a Column model from Tubular javascript
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Template">
+            <summary>
+            The template to use with tbGrid
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.EditorType">
+            <summary>
+            The Editor Type
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.HasFilter">
+            <summary>
+            Set if the Column has filter
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Visible">
+            <summary>
+            Set if the Column is visible
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.IsKey">
+            <summary>
+            Set if the Columns is key in the datasource
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.ShowLabel">
+            <summary>
+            Defines if the label is shown
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Placeholder">
+            <summary>
+            Placeholder text
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Format">
+            <summary>
+            Format string
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Help">
+            <summary>
+            Help text
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.Required">
+            <summary>
+            Set if the field is required
+            </summary>
+        </member>
+        <member name="P:Unosquare.Tubular.ObjectModel.ModelColumn.ReadOnly">
+            <summary>
+            Set if the field is read-only
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.MultipleSerieChartResponse`1">
+            <summary>
+            Represents a multiple serie chart response
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.MultipleSerieChartResponse`1.Data">
+            <summary>
+            The chart response data
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.MultipleSerieChartResponse`1.Labels">
+            <summary>
+            The chart labels
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.MultipleSerieChartResponse`1.Series">
+            <summary>
+            The chart series
+            </summary>
+        </member>
+        <member name="T:Unosquare.Tubular.ObjectModel.SingleSerieChartResponse`1">
+            <summary>
+            Creates a single-serie chart reponse
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.SingleSerieChartResponse`1.Data">
+            <summary>
+            The chart response data
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.SingleSerieChartResponse`1.Labels">
+            <summary>
+            The chart labels
+            </summary>
+        </member>
+        <member name="F:Unosquare.Tubular.ObjectModel.SingleSerieChartResponse`1.SerieName">
+            <summary>
+            The serie name
+            </summary>
+        </member>
+    </members>
+</doc>

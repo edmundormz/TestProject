@@ -1,0 +1,30 @@
+﻿<tb-form model="Model">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="closePopup()"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" ng-hide="!Model.$isNew">Add Toy</h3>
+    </div>
+    <div class="modal-body">
+        <tb-simple-editor max="50" show-label="true"
+                          name="Name">
+        </tb-simple-editor>
+        <tb-simple-editor max="100" show-label="true"
+                          name="Description">
+        </tb-simple-editor>
+        <tb-numeric-editor show-label="true" min="0" max="100"
+                           name="AgeRestriction" label="Age Restriction">
+        </tb-numeric-editor>
+        <tb-simple-editor max="50" show-label="true"
+                          name="Company">
+        </tb-simple-editor>
+        <tb-numeric-editor show-label="true" min="1" max="100"
+                           name="Price">
+        </tb-numeric-editor>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="savePopup()"
+                ng-disabled="!Model.$valid()">
+            Save
+        </button>
+        <button class="btn btn-danger" ng-click="closePopup()">Cancel</button>
+    </div>
+</tb-form>

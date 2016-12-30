@@ -80,6 +80,10 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Linq.Dynamic.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0f07ec44de6ac832, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.Core.1.0.6.8\lib\net452\System.Linq.Dynamic.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -109,6 +113,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Unosquare.Tubular, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tubular.ServerSide.1.0.9\lib\net452\Unosquare.Tubular.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -148,6 +156,17 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\tubular\tubular-bundle.css" />
+    <Content Include="Scripts\tubular\tubular-bundle.js" />
+    <Content Include="Scripts\tubular\tubular-bundle.min.css" />
+    <Content Include="Scripts\tubular\tubular-bundle.min.js" />
+    <Content Include="Scripts\tubular\tubular-chartjs-bundle.js" />
+    <Content Include="Scripts\tubular\tubular-chartjs-bundle.min.js" />
+    <Content Include="Scripts\tubular\tubular-highcharts-bundle.js" />
+    <Content Include="Scripts\tubular\tubular-highcharts-bundle.min.js" />
+    <Content Include="Views\addToy.html" />
+    <Content Include="Views\editToy.html" />
+    <Content Include="Views\toys.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

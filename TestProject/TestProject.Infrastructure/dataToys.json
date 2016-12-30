@@ -1,18 +1,18 @@
 [
   {
-    "Id": 1,
-    "Name": "Iron Man",
-    "Description": "You know who it is",
-    "AgeRestriction": 0,
-    "Company": "Marvel",
-    "Price": 100.0
-  },
-  {
     "Id": 2,
     "Name": "Captain America",
     "Description": "Even Cheaper than Iron Man",
     "AgeRestriction": 0,
     "Company": "Marvel",
     "Price": 80.0
+  },
+  {
+    "Id": 3,
+    "Name": "Hulk",
+    "Description": "Green",
+    "AgeRestriction": 0,
+    "Company": "Marvel",
+    "Price": 87.0
   }
 ]

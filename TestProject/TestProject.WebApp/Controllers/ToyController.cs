@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using TestProject.Core;
 using TestProject.Infrastructure;
+using Unosquare.Tubular;
 
 namespace TestProject.WebApp.Controllers
 {
@@ -14,7 +15,8 @@ namespace TestProject.WebApp.Controllers
         ToyRepository repo; 
 
         // GET api/<controller>
-        public List<Toy> Get()
+        [HttpPost]
+        public List<Toy> GetToys([FromBody] GridDataRequest model)
         {
             repo = new ToyRepository();
             var toys = repo.GetToys();
@@ -30,7 +32,7 @@ namespace TestProject.WebApp.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]Toy newToy)
+        public void PostToy([FromBody]Toy newToy)
         {
             repo = new ToyRepository();
             repo.Add(newToy);
