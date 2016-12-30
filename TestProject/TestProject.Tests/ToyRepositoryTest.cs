@@ -23,7 +23,6 @@ namespace TestProject.Tests
         {
             Toy t = new Toy
             {
-                Id = 3,
                 Name = "Hulk",
                 Price = 90,
                 AgeRestriction = 0,
@@ -40,14 +39,44 @@ namespace TestProject.Tests
         {
             var result = repo.GetToys();
             Assert.IsNotNull(result);
-            var countToys = repo.GetToys().Count;
-            Assert.AreEqual(2, countToys);
+        }
+
+        [TestMethod]
+        public void EditToy()
+        {
+            Toy t = new Toy
+            {
+                Id = 2,
+                Name = "Captain America",
+                Price = 80,
+                AgeRestriction = 0,
+                Description = "Even Cheaper than Iron Man",
+                Company = "Marvel"
+            };
+            repo.Edit(t);
+            Toy editedToy = repo.FindById(t.Id);
+            Assert.AreEqual(t.Price, editedToy.Price);
         }
 
         [TestMethod]
         public void DontRepeatIds()
         {
+            var toys = repo.GetToys();
+            var n = toys.GroupBy(x => x.Id).Count();
+            var m = toys.Count;
+            Assert.AreEqual(n, m);
 
+
+
+        }
+
+        [TestMethod]
+        public void RemoveLastToy()
+        {
+            var lastId = repo.GetToys().Count;
+            repo.Remove(lastId);
+            var newLastId = repo.GetToys().Count;
+            Assert.AreEqual(lastId - 1, newLastId);
         }
     }
 }
