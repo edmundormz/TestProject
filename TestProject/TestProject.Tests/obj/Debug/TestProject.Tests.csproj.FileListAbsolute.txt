@@ -1,6 +1,5 @@
 C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\TestProject.Tests.dll
 C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\TestProject.Tests.pdb
-C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\TestProject.Core.dll
 C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\TestProject.Infrastructure.dll
 C:\Users\edmundo.ramirez\Documents\TestProject\TestProject\TestProject.Tests\bin\Debug\Newtonsoft.Json.dll

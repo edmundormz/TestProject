@@ -10,7 +10,6 @@ namespace TestProject.Core
     public class Toy
     {
         [Required]
-        [Key]
         public int Id { get; set; }
 
         [Required]

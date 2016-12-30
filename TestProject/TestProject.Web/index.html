@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org/" lang="en" ng-app="app">
+<head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/latest/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//npmcdn.com/angular-toastr/dist/angular-toastr.css" />
+    <title>Toy Store</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 50px;
+            color: red;
+        }
+    </style>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+    <script src="//cdn.jsdelivr.net/g/angularjs@1.5.0(angular.min.js+angular-animate.min.js+angular-route.min.js),angular.bootstrap@2.1.2(ui-bootstrap.min.js+ui-bootstrap-tpls.min.js),tubular,blob.js(Blob.js),filesaver.js,chart.js"></script>
+    <script src="//npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
